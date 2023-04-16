@@ -124,17 +124,17 @@ h1 {
   --radius: 0px 0px 0px 4px;
 }
 
-.cell.correct {
+.cell.correct, .key-cell.correct {
   background: var(--color-success);
   border-color: var(--color-success);
   color: white;
 }
-.cell.incorrect {
+.cell.incorrect, .key-cell.incorrect {
   background: var(--color-gray-300);
   border-color: var(--color-gray-300);
   color: white;
 }
-.cell.misplaced {
+.cell.misplaced, .key-cell.misplaced {
   background: var(--color-warning);
   border-color: var(--color-warning);
   color: white;
@@ -194,6 +194,38 @@ h1 {
   margin: -1px;
   padding: 0;
   border: 0;
+}
+
+.banner .reset {
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+}
+
+.keyboard {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  row-gap: 10px;
+}
+
+.key-row {
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 10px;
+}
+
+.key-cell {
+  font-weight: bold;
+  display: inline-block;
+  background: #E6E6E6;
+  height: 40px;
+  width: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  font-size: 20px;
 }
 
 /*
